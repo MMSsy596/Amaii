@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmaiiCuteVcll</title>
+    <link rel="stylesheet" href=" main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="css2" rel="stylesheet">
+    <style>
+       body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #000;
+}
+
+.wrapper {
+  border: none;
+  position: relative;
+  width: 410px;
+  height: 340px;
+  display: block;
+  margin: 100px auto;
+  perspective: 1000px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateZ(288px);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.cell {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 115px;
+  top: 100px;
+  border: none;
+  transition: transform 1s, opacity 1s;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(288px);
+}
+
+.cell:nth-child(2) {
+  transform: rotateY(40deg) translateZ(288px);
+}
+
+.cell:nth-child(3) {
+  transform: rotateY(80deg) translateZ(288px);
+}
+
+.cell:nth-child(4) {
+  transform: rotateY(120deg) translateZ(288px);
+}
+
+.cell:nth-child(5) {
+  transform: rotateY(160deg) translateZ(288px);
+}
+
+.cell:nth-child(6) {
+  transform: rotateY(200deg) translateZ(288px);
+}
+
+.cell:nth-child(7) {
+  transform: rotateY(240deg) translateZ(288px);
+}
+
+.cell:nth-child(8) {
+  transform: rotateY(280deg) translateZ(288px);
+}
+
+.cell:nth-child(9) {
+  transform: rotateY(320deg) translateZ(288px);
+}
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="carousel">
+          <div class="cell">
+            <img src="https://codetheworld.io/wp-content/uploads/2024/04/cat-01.webp">
+          </div>
+          <div class="cell">
+            <img src="https://codetheworld.io/wp-content/uploads/2024/04/cat-02.webp">
+          </div>
+          <div class="cell">
+            <img src="https://codetheworld.io/wp-content/uploads/2024/04/cat-03.webp">
+          </div>
+          <div class="cell">
+            <img src="https://codetheworld.io/wp-content/uploads/2024/04/cat-04.webp">
+          </div>
+          <div class="cell">
+            <img src="https://codetheworld.io/wp-content/uploads/2024/04/cat-05.webp">
+          </div>
+          <div class="cell">
+            <img src="https://codetheworld.io/wp-content/uploads/2024/04/cat-06.webp">
+          </div>
+          <div class="cell">
+            <img src="https://codetheworld.io/wp-content/uploads/2024/04/cat-07.webp">
+          </div>
+          <div class="cell">
+            <img src="https://codetheworld.io/wp-content/uploads/2024/04/cat-08.webp">
+          </div>
+          <div class="cell">
+            <img src="https://codetheworld.io/wp-content/uploads/2024/04/cat-09.webp">
+          </div>
+        </div>
+      </div>
+      
+      <script src="script.js"></script>
+</body>
+
+
+
+</html>
+

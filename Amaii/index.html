@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmaiiCuteVcll</title>
+    <!-- <link rel="shortcut icon" href="https://phamvulinh18.github.io/crush6/icon.png" type="image/x-icon"> -->
+    <link rel="stylesheet" href=" main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="css2" rel="stylesheet">
+    <style>
+        body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: black;
+  overflow: hidden;
+  color: white;
+}
+
+.gallery {
+  --size: 250px;
+  --gap: .5rem;
+  --grid-cols: var(--size) var(--size) var(--size);
+  --grid-rows: var(--size) var(--size) var(--size);
+  --size-hover: calc(var(--size) * 2);
+  --size-not-hover: calc(var(--size) / 2);
+  --speed: 500ms;
+
+  width: 100%;
+  width: 800px;
+  display: grid;
+  grid-template-columns: var(--grid-cols);
+  transition: var(--speed) ease-in-out;
+  gap: var(--gap);
+}
+
+.gallery>div {
+  height: fit-content;
+  display: grid;
+  grid-template-rows: var(--grid-rows);
+  gap: var(--gap);
+  transition: var(--speed) ease-in-out;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(75%);
+  transition: filter var(--speed);
+}
+
+img:hover {
+  filter: sepia(0);
+}
+
+.gallery:has(>div:nth-child(1):hover) {
+  --grid-cols: var(--size-hover) var(--size-not-hover) var(--size-not-hover);
+}
+
+.gallery:has(>div:nth-child(2):hover) {
+  --grid-cols: var(--size-not-hover) var(--size-hover) var(--size-not-hover);
+}
+
+.gallery:has(>div:nth-child(3):hover) {
+  --grid-cols: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
+}
+
+.gallery>div:has(>img:nth-child(1):hover) {
+  --grid-rows: var(--size-hover) var(--size-not-hover) var(--size-not-hover);
+}
+
+.gallery>div:has(>img:nth-child(2):hover) {
+  --grid-rows: var(--size-not-hover) var(--size-hover) var(--size-not-hover);
+}
+
+.gallery>div:has(>img:nth-child(3):hover) {
+  --grid-rows: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
+}
+
+    </style>
+</head>
+<body>
+
+    <section class="gallery">
+    <div>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPbLYahLbf3yrAqE4-eDj3SyImDuGgKe-Uez0CsWdKauNNwen9G6uqTmfiw9OrrWjD3H3d5cJ58KdmYgIFNUDRGa3gEDrqd6Dk6DFVBrqFGQGgm_ieOf3cGKoafk-9voau23CxmFg6fVc4WsMLYQHCidg=w464-h1004-s-no-gm?authuser=0" alt="">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPY0KRnr0ar-vwJ2gnOJpJ8vQgC2LZC4SCVUSoWLmmUa6G0Tiw8jtWYC7Ya5oFhQ6Pa2AOzpk9eQ1Uv9W0HjD-oQsGuONHeeggCYcNq6-aaoWkVkM_7RgHTEsdQJa-lZ7euBPfzZsSVXJDrx1JeC4pVrg=w929-h943-s-no-gm?authuser=0"alt="">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczNj49t1mhFt1dsCTst6n8NvQGyxksUEF3kcfnedKPI4srkI1XoCP98hFF_Stbflxn9gvHuEn6-543sZarHU--R6egWinWaJ9Mhz18Y-0wFCiU07GKKNrgaXqMq-HTD-MOXxYSqzVwpXejh50s5PoIWlLw=w464-h1004-s-no-gm?authuser=0"alt="">
+    </div>
+    <div>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPPaxLjQIT6iFKXA7nSEAXe2uE7cW2zoh_lTB6IrsO8Wn2pdE9_03QlcOxpcj2sefd-99TROjSaYx6bfUNiffwNDQCS_lC73IjFd0X2fVyTeGhs76DGfkbbUONpbqJjaCoplg8gwZHSIcRupNw45KWEgA=w464-h1004-s-no-gm?authuser=0"alt="">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPVyWtMUnmLGfdLUvH3ctU43gAvvlpe5Op8W8vOaN9hw8-7YhsDXzHuTTTxJlIw4qb-2ebCyFbfNG-znH9xVdvsYaCqLUue5Fvvjugiueiiule2CI6uQhuaQva-kdrGCV56-LnsY4N4_S1-ldDj1xJovA=w464-h1004-s-no-gm?authuser=0"alt="">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPVO6H4LqHSWwFPItCuc5TQlwlTo89hK378muwWC-Lx11eERphfZWYsUKJsacwlaGGH8yE3x0-baS2X310AOy_U_X9Fk9pM4j84GhTPwHdZnUs5N5iqkurru-guoMkepU3OujGc21IpRAVuH96BMtJMFQ=w464-h1004-s-no-gm?authuser=0"alt="">
+    </div>
+    <div>
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczPNKPNkLUMfYLbiO5FUTbATudGJbyG7dL7iPfNpqEwX8pSC9YoPy5gR-SYjkNhp88Onhj9pXDsf-DFSEBJzYLB_NtMGSfMStxao7_zdvENn0aN0iVqLEWOsJNsd00S9a9znYNPG5gpVOrZ-Scy7Qf6pgA=w464-h1004-s-no-gm?authuser=0"alt="">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczM3fm2djrJaqkF7Vb6c7aZyPL79-w9rO2dqqi7JvnPT4a6EidG1KHVnDsoreuaOH6BcBTd3x3PJVILV0_KOa4ltXlbVzNNO_VOcn5pxUgcnuW478swufBptMwNaHDTrNp5THrDtQ4I0MVjX4011S6qTIA=w464-h1004-s-no-gm?authuser=0"alt="">
+      <img src="https://lh3.googleusercontent.com/pw/AP1GczP_d72JwVZFWCXNirCocouuurVUxEfFugK1pDt7aR84NI72yiz8SR0Ibrsa7adp82x1xPuZmTCYI0mm1O4CNiCiUP9EgoBN6UGTvOOZIQFypOxxarzKOGwB4x-Cnq77YYJYi8brfV8E14ppVAo-F8EjrQ=w674-h1004-s-no-gm?authuser=0"alt="">
+    </div>
+  </section>
+
+</body>
+
+
+
+</html>
